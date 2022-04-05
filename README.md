@@ -141,7 +141,7 @@ Acima recebemos as coordenadas da mão.
         x1, y1 = lmList[4][1], lmList[4][2]
         x2, y2 = lmList[8][1], lmList[8][2]
 ```
-Acima especificamos os pontos da mão que usaremos: o indice 4 é o Polegar e o indice 8 é o indicador.
+Acima especificamos os pontos da mão que usaremos: indice 4 - Polegar e indice 8 o indicador.
 
 Lá no início temos a imagem com o mapeamento desses pontos com a biblioteca mediapipe.
 
