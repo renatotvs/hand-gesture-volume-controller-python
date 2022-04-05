@@ -61,7 +61,7 @@ Abrir o terminal e efetuar as seguintes instalações:
 > pip install pycaw
 
 
-## Passo 1: Importas as seguintes bibliotecas
+## Passo 1: Importar bibliotecas
 
 ```
 import in orange cv2
@@ -91,29 +91,51 @@ cap.set(4, hCam) # aplica tamanho na vertical
 
 Acima obtemos a entrada de vídeo da câmera principal do nosso computador. Se estiver usando qualquer outra câmera, substitua o número 0 pelo da câmera que está usando.
 
-## Passo 3: 
+## Passo 3: Configurar, Detectar as mãos
+```
+detector = htm.handDetector(detectionCon=0.7, maxHands=1)
+```
 
+No código acima, estamos chamando htm.handDetector módulo para detectar as mãos da entrada de vídeo que recebemos de nossa câmera principal.
+As configurações do mediapipe e métodos estão separados no arquivo HandTrackingModule.py
 
-## Passo 4: 
-
+## Passo 4: Configurar o volume que iremos controlar
+```
+devices = AudioUtilities.GetSpeakers()
+interface = devices.Activate(
+    IAudioEndpointVolume._iid_, CLSCTX_ALL, None)
+volume = cast(interface, POINTER(IAudioEndpointVolume))
+```
 
 ## Passo 5: 
-
+```
+# 
+```
 
 ## Passo 6: 
-
+```
+# 
+```
 
 ## Passo 7: 
-
+```
+# 
+```
 
 ## Passo 8: 
-
+```
+# 
+```
 
 ## Passo 9: 
-
+```
+# 
+```
 
 ## Passo 10: 
-
+```
+# 
+```
 
 ## Código Completo:
 
