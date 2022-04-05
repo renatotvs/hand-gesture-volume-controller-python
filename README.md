@@ -97,9 +97,9 @@ detector = htm.handDetector(detectionCon=0.7, maxHands=1)
 ```
 
 No código acima, estamos chamando htm.handDetector módulo para detectar as mãos da entrada de vídeo que recebemos de nossa câmera principal.
-As configurações do mediapipe e métodos estão separados no arquivo HandTrackingModule.py
+As configurações do mediapipe e métodos estão separados no arquivo HandTrackingModule.py que está sendo importado no código.
 
-## Passo 4: Configurar o volume que iremos controlar
+## Passo 4: Configurações para controlar o auto falante com a biblioteca pycaw
 ```
 devices = AudioUtilities.GetSpeakers()
 interface = devices.Activate(
