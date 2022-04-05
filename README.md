@@ -158,10 +158,83 @@ O código acima desenha um círculo na ponta do polegar e no dedo indicador com 
 
 A cor está no padrão BGR (blue, green, red).
 
-## Passo 10: 
+## Passo 10: Desenhar uma linha entre os pontos 4 e 8
 ```
-# 
+cv2.line(img, (x1, y1), (x2, y2), (255, 0, 255), 3)
 ```
+No código acima, usamos a cv2.line função para desenhar uma linha entre o ponto quatro da mão e o ponto 8. A linha conectará ponto 4 (x1, y1), que é a ponta do polegar, e ponto 8 (x2, y2), que é a ponta do dedo indicador. (255, 0, 0)é a cor da linha e 3 é a sua espessura.
+
+## Passo 11: Calcular a distância entre os pontos 4 e 8
+
+```
+# lengh = math.hypot(x2 - x1, y2 - y1)
+```
+No código acima, encontramos a distância entre a ponta do polegar e o dedo indicador usando uma hipotenusa. Conseguimos isso chamando a hypot função matemática e passando a diferença entre x2 e x1 e a diferença entre y2 e y1.
+
+## Passo 12: Convertendo o alcance das mãos para o alcance do volume
+
+```
+vol = np.interp(lengh, [50, 300], [minVol, maxVol])
+```
+função NumPy np.interp, para converter o intervalo de mão para o intervalo de volume. Os argumentos usados ​​são:
+
++ length: Este é o valor que queremos converter.
++ [50 - 300]: Este é o alcance da mão.
++ [volMin, volMax]: Fornecendo o intervalo para o qual queremos converter.
+
+configuração para barra do volume:
+
+```
+volBar = np.interp(lengh, [50, 300], [360, 150])
+```
+
+configuração para exiição do volume de 0 á 100:
+
+```
+volPerc = np.interp(lengh, [50, 300], [0, 100])
+```
+
+## Passo 13: Setar o volume principal
+
+```
+# volume.SetMasterVolumeLevel(vol, None)
+volume.SetMasterVolumeLevelScalar(volPerc / 100, None)
+```
+
+No exemplo acima utilizamos volume.SetMasterVolumeLevelScalar para receber o percentual do intervalo de volume.
+
+## Passo 14: Desenhar uma barra de controle de volume
+
+```
+cv2.rectangle(img, (50, 150), (85, 360), (255,0,0), 3)
+cv2.rectangle(img, (50, int(volBar)), (85, 360), (0, 255, 0), cv2.FILLED)
+```
+
+O primeiro retangulo é para criar o contorno e segundo retangulo é criado para receber um preenchimento dinâmico, para simular uma barra de controle do volume.
+
+## Passo 15: Mostra o volume atual uma Label na tela
+
+```
+cVol = int(volume.GetMasterVolumeLevelScalar() * 100) # mostra volume do windows
+cv2.putText(img, f'Vol: {int(cVol)}', (400, 50), cv2.FONT_HERSHEY_COMPLEX, 1, (255, 0, 0), 3)
+```
+
+## Passo 16: Exibe o video para interação com o usuário
+
+```
+cv2.imshow("img", img)
+```
+
+## Etapa 17: Fechar Janela
+
+```
+k = cv2.waitKey(1) & 0xFF
+
+    if k == 27 or k == 13:
+        break
+```
+O código acima encerrará o programa quando o usuário pressionar a tecla ESC ou ENTER.
+
 
 ## Código Completo:
 
