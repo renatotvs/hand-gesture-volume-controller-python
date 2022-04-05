@@ -135,18 +135,28 @@ lmList = detector.findPosition(img, draw=False)
 
 Acima recebemos as coordenadas da mão.
 
-## Passo 8: Aplicar o filtro das coordendas que iremos utilizar
+## Passo 8: Aplicar o filtro das coordendas que iremos utilizar:
 ```
  if len(lmList) != 0:
         x1, y1 = lmList[4][1], lmList[4][2]
         x2, y2 = lmList[8][1], lmList[8][2]
 ```
-Acima estamos informando que o indice 4 é o Polegar e o indice 8 é o indicador.
+Acima especificamos os pontos da mão que usaremos: o indice 4 é o Polegar e o indice 8 é o indicador.
 
-## Passo 9: 
+Lá no início temos a imagem com o mapeamento desses pontos com a biblioteca mediapipe.
+
+## Passo 9: Desenhando um círculo entre a ponta do polegar e a ponta do dedo indicador
 ```
-# 
+cv2.circle(img, (x1, y1), 15, (255,0,255), cv2.FILLED)
+cv2.circle(img, (x2, y2), 15, (255, 0, 255), cv2.FILLED)
 ```
+
+O código acima desenha um círculo na ponta do polegar e no dedo indicador com as coordenadas (x e y).
+
+(x1, y1)especifica que vamos desenhar o círculo na ponta do polegar onde 15 é o raio do círculo e (255, 0, 0) é a cor do círculo, cv2.FILLED refere-se à espessura dos pixels que preencherão o círculo com a cor que especificamos.
+(x2, y2)especifica que vamos desenhar o círculo na ponta do indicador.
+
+A cor está no padrão BGR (blue, green, red).
 
 ## Passo 10: 
 ```
