@@ -107,6 +107,8 @@ interface = devices.Activate(
 volume = cast(interface, POINTER(IAudioEndpointVolume))
 ```
 
+Estas são as inicializações que precisamos para pycaw funcionar. Você pode encontrar a documentação da biblioteca <a href='https://github.com/AndreMiras/pycaw'> aqui </a>
+
 ## Passo 5: 
 ```
 # 
