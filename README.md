@@ -1,6 +1,6 @@
 # Controlador de volume por gestos da mão usando Python
 
-Este projeto é sobre utilizar camera para controlar o volume em tempo real com o uso de bibliotecas em python: openCV, mediapipe e Pycall
+Este projeto é sobre utilizar a camera para controlar o volume em tempo real com o uso de bibliotecas em python: openCV, mediapipe e Pycall
 
 **Assunto abordado:** Visão Computacional
 
