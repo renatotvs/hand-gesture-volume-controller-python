@@ -99,7 +99,7 @@ detector = htm.handDetector(detectionCon=0.7, maxHands=1)
 No código acima, estamos chamando htm.handDetector módulo para detectar as mãos da entrada de vídeo que recebemos de nossa câmera principal.
 As configurações do mediapipe e métodos estão separados no arquivo HandTrackingModule.py que está sendo importado no código.
 
-## Passo 4: Configurações para controlar o auto falante com a biblioteca pycaw
+## Passo 4: Configurações para controlar o alto-falante com a biblioteca pycaw
 ```
 devices = AudioUtilities.GetSpeakers()
 interface = devices.Activate(
@@ -109,25 +109,39 @@ volume = cast(interface, POINTER(IAudioEndpointVolume))
 
 Estas são as inicializações que precisamos para pycaw funcionar. Você pode encontrar a documentação da biblioteca <a href='https://github.com/AndreMiras/pycaw'> aqui </a>
 
-## Passo 5: 
+## Passo 5: encontrar a faixa de volume entre o volume mínimo e máximo
 ```
-# 
+volRange = volume.GetVolumeRange()
+
+minVol = volRange[0]
+maxVol = volRange[1]
 ```
 
-## Passo 6: 
+## Passo 6: Captura imagem da camera e faz detecção da mão
 ```
-# 
+while True:
+
+    success, img = cap.read()
+
+    img = detector.findHands(img)
 ```
 
-## Passo 7: 
+O código acima verifica se a câmera que especificamos funciona. Se funcionar, vamos capturar para o processamento da imagem e detecção da mão. 
+
+## Passo 7: Capturar o posicionmento da mão
 ```
-# 
+lmList = detector.findPosition(img, draw=False)
 ```
 
-## Passo 8: 
+Acima recebemos as coordenadas da mão.
+
+## Passo 8: Aplicar o filtro das coordendas que iremos utilizar
 ```
-# 
+ if len(lmList) != 0:
+        x1, y1 = lmList[4][1], lmList[4][2]
+        x2, y2 = lmList[8][1], lmList[8][2]
 ```
+Acima estamos informando que o indice 4 é o Polegar e o indice 8 é o indicador.
 
 ## Passo 9: 
 ```
