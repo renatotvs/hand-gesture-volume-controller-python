@@ -34,16 +34,6 @@ O objetivo deste projeto é desenvolver uma interface que capture dinamicamente 
 
 Quando o dedo indicador se afasta do dedo polegar aumenta o volume e o quando o dedo polegar se aproxima do dedo indicador o volume diminue.
 
-Conforme mostrado nas imagens abaixo:
-
-![image](https://user-images.githubusercontent.com/42357180/161835429-beba5707-de42-4fa9-936d-c707341b77a5.png)
-
-Na imagem abaixo é possível ver em tempo real o ponteiro do volume do windows mudar, conforme é feito o movimento entre os dedos.
-
-![image](https://user-images.githubusercontent.com/42357180/161835512-41c5db07-d4bc-4bc5-ac7a-80d381ed5ae8.png)
-
-![image](https://user-images.githubusercontent.com/42357180/161835557-bbfac549-c98a-423e-a04c-81ff55c8af37.png)
-
 ## Ambiente de desenvolvimento
 
 No desenvolvimento pode ser construído tanto no jupyter notebook quanto outros editores para python. No meu caso utilizei o PyCharm, conforme abaixo:
@@ -54,6 +44,91 @@ Criar um novo projeto
 
 ![image](https://user-images.githubusercontent.com/42357180/161845151-20e42069-f691-4b55-897d-57b8803a801b.png)
 
+![image](https://user-images.githubusercontent.com/42357180/161845831-15f4c12b-874b-4d4f-b399-00b7ffaef5a7.png)
 
+O projeto contém os arquivos abaixo:
++ HandGestureVolumeController.py
++ HandingTrackingModule.py
 
 ## Instalação das Bibliotecas
+
+Abrir o terminal e efetuar as seguintes instalações:
+
+> pip install python-opencv
+
+> pip install mediapipe
+
+> pip install pycaw
+
+
+## Passo 1: Importas as seguintes bibliotecas
+
+```
+import in orange cv2
+import time
+import numpy as np
+import HandTrackingModule as htm
+import math
+#control volume
+from ctypes import cast, POINTER
+from comtypes import CLSCTX_ALL
+from pycaw.pycaw import AudioUtilities, IAudioEndpointVolume
+```
+
+## Passo 2: Configurações da Camera
+```
+############################################################
+wCam, hCam = 640, 480 # definições do tamanho da tela
+############################################################
+
+camera = 0 #1
+
+cap = cv2.VideoCapture(camera)
+
+cap.set(3, wCam) # aplica tamanho na horizontal
+cap.set(4, hCam) # aplica tamanho na vertical
+```
+
+Acima obtemos a entrada de vídeo da câmera principal do nosso computador. Se estiver usando qualquer outra câmera, substitua o número 0 pelo da câmera que está usando.
+
+## Passo 3: 
+
+
+## Passo 4: 
+
+
+## Passo 5: 
+
+
+## Passo 6: 
+
+
+## Passo 7: 
+
+
+## Passo 8: 
+
+
+## Passo 9: 
+
+
+## Passo 10: 
+
+
+## Código Completo:
+
+```
+# 
+```
+
+## Demonstração
+
+Conforme mostrado nas imagens abaixo:
+
+![image](https://user-images.githubusercontent.com/42357180/161835429-beba5707-de42-4fa9-936d-c707341b77a5.png)
+
+Na imagem abaixo é possível ver em tempo real o ponteiro do volume do windows mudar, conforme é feito o movimento entre os dedos.
+
+![image](https://user-images.githubusercontent.com/42357180/161835512-41c5db07-d4bc-4bc5-ac7a-80d381ed5ae8.png)
+
+![image](https://user-images.githubusercontent.com/42357180/161835557-bbfac549-c98a-423e-a04c-81ff55c8af37.png)
