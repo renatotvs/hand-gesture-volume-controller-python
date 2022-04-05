@@ -44,5 +44,16 @@ Na imagem abaixo é possível ver em tempo real o ponteiro do volume do windows 
 
 ![image](https://user-images.githubusercontent.com/42357180/161835557-bbfac549-c98a-423e-a04c-81ff55c8af37.png)
 
+## Ambiente de desenvolvimento
+
+No desenvolvimento pode ser construído tanto no jupyter notebook quanto outros editores para python. No meu caso utilizei o PyCharm, conforme abaixo:
+
+![image](https://user-images.githubusercontent.com/42357180/161844629-45ea18de-7533-4d75-8a40-0fbf3ccf2ef8.png)
+
+Criar um novo projeto
+
+![image](https://user-images.githubusercontent.com/42357180/161845151-20e42069-f691-4b55-897d-57b8803a801b.png)
+
+
 
 ## Instalação das Bibliotecas
