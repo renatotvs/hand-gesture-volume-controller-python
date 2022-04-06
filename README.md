@@ -345,8 +345,12 @@ Abaixo alguns cenários de detecção e controle do volume:
 
 ![image](https://user-images.githubusercontent.com/42357180/161835429-beba5707-de42-4fa9-936d-c707341b77a5.png)
 
-É possível ver em tempo real o ponteiro do volume do windows mudar, conforme é feito o movimento entre os dedos.
+É possível ver em tempo real o ponteiro do volume do windows mudar, conforme é feito o movimento entre os dedos polegar e indicador:
 
 ![image](https://user-images.githubusercontent.com/42357180/161835512-41c5db07-d4bc-4bc5-ac7a-80d381ed5ae8.png)
 
 ![image](https://user-images.githubusercontent.com/42357180/161835557-bbfac549-c98a-423e-a04c-81ff55c8af37.png)
+
+## Conclusão
+
+Se você estiver trabalhando enquanto ouve sua música favorita, com apenas um gesto de sua mão, você poderá controlar o nível de volume de sua música.
