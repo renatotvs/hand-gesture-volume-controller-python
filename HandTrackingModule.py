@@ -1,15 +1,3 @@
-"""
-Hand Tracking Module
-By: Murtaza Hassan
-Youtube: http://www.youtube.com/c/MurtazasWorkshopRoboticsandAI
-Website: https://www.computervision.zone
-"""
-
-"""
-Para este exemplo foi preciso adicionar o parametro modelComplexy=1 - conforme orientações no stackoveerflow:
-https://stackoverflow.com/questions/69686420/typeerror-create-int-incompatible-function-arguments
-"""
-
 import cv2
 import mediapipe as mp
 import time
