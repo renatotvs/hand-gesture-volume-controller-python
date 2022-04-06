@@ -53,7 +53,7 @@ O projeto contém os arquivos abaixo:
 
 Abrir o terminal e efetuar as seguintes instalações:
 
-> pip install python-opencv
+> pip install opencv-python
 
 > pip install mediapipe
 
