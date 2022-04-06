@@ -9,9 +9,6 @@ from ctypes import cast, POINTER
 from comtypes import CLSCTX_ALL
 from pycaw.pycaw import AudioUtilities, IAudioEndpointVolume
 
-#import win32gui, win32con
-
-
 ############################################################
 wCam, hCam = 640, 480
 #wCam, hCam = 1200, 600
