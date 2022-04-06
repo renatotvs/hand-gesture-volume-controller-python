@@ -345,7 +345,7 @@ while True:
 
 Abaixo alguns cenários de detecção da mão e controle do volume:
 
-Na configuração padrão definida o volume inicia com valor 20:
+Ao executar a primeira vez o volume pré-definido será carregado:
 
 ![image](https://user-images.githubusercontent.com/42357180/162013928-e9c2c272-9c90-4c40-b9b6-d03b48c9431a.png)
 
