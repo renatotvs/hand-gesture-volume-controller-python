@@ -345,13 +345,15 @@ while True:
 
 Abaixo alguns cenários de detecção e controle do volume:
 
-![image](https://user-images.githubusercontent.com/42357180/161835429-beba5707-de42-4fa9-936d-c707341b77a5.png)
+![image](https://user-images.githubusercontent.com/42357180/162011960-9a2efd49-6260-4374-8296-a7419d9d7be7.png)
 
 É possível ver em tempo real o ponteiro do volume do windows mudar, conforme é feito o movimento entre os dedos polegar e indicador:
 
-![image](https://user-images.githubusercontent.com/42357180/161835512-41c5db07-d4bc-4bc5-ac7a-80d381ed5ae8.png)
+![image](https://user-images.githubusercontent.com/42357180/162012021-d7967ba3-1bed-42b8-b629-fe80e58b2a7a.png)
 
-![image](https://user-images.githubusercontent.com/42357180/161835557-bbfac549-c98a-423e-a04c-81ff55c8af37.png)
+![image](https://user-images.githubusercontent.com/42357180/162012160-37d43245-de19-47fb-82ba-10f5ec7f3cbb.png)
+
+![image](https://user-images.githubusercontent.com/42357180/162012206-0cf12f36-766c-48c8-b337-52fae9ba7d5f.png)
 
 ## Conclusão
 
