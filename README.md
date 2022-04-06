@@ -189,7 +189,7 @@ configuração para barra do volume:
 volBar = np.interp(lengh, [50, 300], [360, 150])
 ```
 
-configuração para exiição do volume de 0 á 100:
+configuração para exibição do volume de 0 á 100:
 
 ```
 volPerc = np.interp(lengh, [50, 300], [0, 100])
