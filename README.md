@@ -80,7 +80,7 @@ from pycaw.pycaw import AudioUtilities, IAudioEndpointVolume
 wCam, hCam = 640, 480 # definições do tamanho da tela
 ############################################################
 
-camera = 0 #1
+camera = 0 #selecão da camera. Onde 0 é para camera principal, 1 para outra camera
 
 cap = cv2.VideoCapture(camera)
 
