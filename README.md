@@ -114,6 +114,14 @@ minVol = volRange[0]
 maxVol = volRange[1]
 ```
 
+Inicialização das variáveis de volume e barra de progresso:
+
+```
+vol = -20.0
+volBar = 318 #360
+volPerc = 20
+```
+
 ## Passo 6: Captura imagem da camera e faz detecção da mão
 ```
 while True:
