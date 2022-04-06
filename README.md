@@ -343,21 +343,9 @@ while True:
 
 ## Resultados
 
-Abaixo alguns cenários de detecção da mão e controle do volume:
+Abaixo resultado da detecção da mão e controle do volume. Com o volume do windows aberto é possível ver em tempo real o ponteiro do volume mudar, conforme é feito o movimento entre os dedos polegar e indicador:
 
-Ao executar a primeira vez o volume pré-definido será carregado:
-
-![image](https://user-images.githubusercontent.com/42357180/162013928-e9c2c272-9c90-4c40-b9b6-d03b48c9431a.png)
-
-Com o volume do windows aberto é possível ver em tempo real o ponteiro do volume mudar, conforme é feito o movimento entre os dedos polegar e indicador:
-
-![image](https://user-images.githubusercontent.com/42357180/162012811-e3a06b4c-379c-4d82-9b5d-70cae5190be8.png)
-
-![image](https://user-images.githubusercontent.com/42357180/162012912-31990c59-ffa8-4bb9-bc46-d2e611813de7.png)
-
-![image](https://user-images.githubusercontent.com/42357180/162012970-f2658ca0-d0b0-4a00-a4ef-a0d9e8d8189c.png)
-
-![image](https://user-images.githubusercontent.com/42357180/162013024-40dc9851-3f9b-4f01-bedd-2bf48a479689.png)
+![20220406_130146_1](https://user-images.githubusercontent.com/42357180/162019678-c4a5242b-e10b-418b-9dd7-62487b5c7028.gif)
 
 ## Conclusão
 
