@@ -341,11 +341,11 @@ while True:
 
 ## Resultados
 
-Conforme mostrado nas imagens abaixo:
+Abaixo alguns cenários de detecção e controle do volume:
 
 ![image](https://user-images.githubusercontent.com/42357180/161835429-beba5707-de42-4fa9-936d-c707341b77a5.png)
 
-Na imagem abaixo é possível ver em tempo real o ponteiro do volume do windows mudar, conforme é feito o movimento entre os dedos.
+É possível ver em tempo real o ponteiro do volume do windows mudar, conforme é feito o movimento entre os dedos.
 
 ![image](https://user-images.githubusercontent.com/42357180/161835512-41c5db07-d4bc-4bc5-ac7a-80d381ed5ae8.png)
 
