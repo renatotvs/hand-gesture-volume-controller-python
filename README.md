@@ -163,6 +163,8 @@ cv2.line(img, (x1, y1), (x2, y2), (255, 0, 255), 3)
 ```
 No código acima, usamos a cv2.line função para desenhar uma linha entre o ponto quatro da mão e o ponto 8. A linha conectará ponto 4 (x1, y1), que é a ponta do polegar, e ponto 8 (x2, y2), que é a ponta do dedo indicador. (255, 0, 0)é a cor da linha e 3 é a sua espessura.
 
+![image](https://user-images.githubusercontent.com/42357180/162007618-78b93fdf-abf7-4739-a565-ba9f9d4c88e1.png)
+
 ## Passo 11: Calcular a distância entre os pontos 4 e 8
 
 ```
