@@ -63,7 +63,7 @@ Abrir o terminal e efetuar as seguintes instalações:
 ## Passo 1: Importar bibliotecas
 
 ```
-import in orange cv2
+import cv2
 import time
 import numpy as np
 import HandTrackingModule as htm
