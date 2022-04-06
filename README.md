@@ -201,7 +201,7 @@ volPerc = np.interp(lengh, [50, 300], [0, 100])
 volume.SetMasterVolumeLevelScalar(volPerc / 100, None)
 ```
 
-No exemplo acima utilizamos volume.SetMasterVolumeLevelScalar para receber o percentual do intervalo de volume.
+No exemplo acima utilizamos volume.SetMasterVolumeLevelScalar.
 
 ## Passo 14: Desenhar uma barra de controle de volume
 
