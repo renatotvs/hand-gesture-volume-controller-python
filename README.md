@@ -238,7 +238,6 @@ O código acima encerrará o programa quando o usuário pressionar a tecla ESC o
 ## Código Completo:
 
 ```
-
 import cv2
 import numpy as np
 import HandTrackingModule as htm
